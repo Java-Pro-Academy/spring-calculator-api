@@ -15,6 +15,12 @@ pipeline {
                 sh 'mvn test'
             }
         }
+
+        stage('Build and Push Docker Image') {
+        }
+
+        stage('SonarQube Scanner') {
+        }
     }
 
     post {
